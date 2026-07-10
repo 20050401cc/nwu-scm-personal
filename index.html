@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>西北大学后勤 · 供应链协同平台</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <!-- 挂载点保持纯净：登录页与主系统界面均由 app.js 动态渲染，便于后续切换 -->
+  <main id="app">
+    <div class="app-loading">正在初始化供应链系统...</div>
+  </main>
+
+  <!-- ES Module：type="module" 自带 defer 语义（并行下载、执行前 DOM 已就绪），
+       且模块作用域天然隔离全局。app.js 内部 import scm-core，无需再单独引入。 -->
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
